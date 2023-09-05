@@ -131,4 +131,34 @@ body {
   padding: 10px 20px;  /* オプション: テキスト周辺のパディングを追加 */
 }
 
+footer a {
+  color: #333; /* 任意の色を選択 */
+  margin: 0 10px;
+}
 
+footer a:hover {
+  opacity: 0.5;
+}
+
+footer img {
+  margin-left: 10px; /* アイコン間のスペースを調整 */
+  vertical-align: middle; /* アイコンを中央揃え */
+}
+
+.icon-link {
+  display: inline-flex; /* flexboxを利用して中央揃えを簡単に実現 */
+  align-items: center; /* 垂直方向の中央揃え */
+  color: #333; /* 任意の色を選択 */
+  margin: 0 10px; /* アイコンの間隔 */
+}
+
+
+.line-icon {
+  width: 24px;
+  height: auto;
+}
+
+.instagram-icon{
+  width: 24px;
+  height: auto;
+}
