@@ -23,3 +23,112 @@ time, mark, audio, video {
 body {
   line-height: 1;
 } */
+
+#navbar-logo {
+  height: 120px;  /* ロゴの高さを50pxに設定 */
+  width: auto;   /* 幅は自動に設定して、アスペクト比を維持します */
+}
+
+
+.fade-in {
+  animation-name: fadeIn;
+  animation-duration: 2s;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.fade-in-section {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+.opacity-50{
+  opacity: 0.8;
+}
+
+.menu-item {
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: #333;
+  height: 155px;
+  text-decoration: none;
+}
+
+.menu-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.menu-item:hover {
+  background-color: #e5e5e5;
+}
+
+.triangle-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 7px;
+  color: white;
+  font-size: 0.7rem;
+  transform: translateY(100%);
+}
+
+.display-4-5 {
+  font-size: 1.5rem; /* この値は`.display-4`と`.display-5`の間の適切な値に調整してください */
+  font-weight: 300; /* Bootstrapのデフォルトのフォントの太さに合わせています */
+  line-height: 1.2; /* Bootstrapのデフォルトの行の高さに合わせています */
+}
+
+.menu-price-item {
+  position: relative;
+  width: 520px;  /* 必要に応じて幅を調整 */
+  overflow: hidden;
+}
+
+.item-name {
+  white-space: nowrap;  /* 折り返しを防ぐ */
+}
+
+.item-name, .item-price{
+  background-color: #fff;
+} 
+
+.item-price:before {
+  content: '・・・・・・・・・・・・・・・・・・・・・・・・・・・';  /* 実際には多数のドットを使用 */
+  white-space: nowrap;
+  overflow: hidden;
+  letter-spacing: 0.2em;  /* ドット間のスペースを調整 */
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;  /* ドットを背面に配置 */
+}
+
+.bg-image {
+  background-image: url('img/IMG_3586.png'); /* 画像のURLを設定してください */
+  height: 300px;  /* 必要に応じて調整 */
+  width: 80%;
+  background-size: cover;
+  background-position: center;
+}
+
+.text-on-image {
+  color: black;  /* テキストの色。必要に応じて変更してください */
+  font-size: 24px;  /* テキストのサイズ。必要に応じて変更してください */
+  background-color: #fff;  /* オプション: テキストの背景に半透明の黒を追加 */
+  padding: 10px 20px;  /* オプション: テキスト周辺のパディングを追加 */
+}
+
+
