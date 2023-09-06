@@ -122,10 +122,17 @@ time, mark, audio, video {
 
 .bg-image {
   background-image: url('img/IMG_3586.png'); /* 画像のURLを設定してください */
-  height: 300px;  /* 必要に応じて調整 */
+  height: 150px;  /* 必要に応じて調整 */
   width: 80%;
   background-size: cover;
   background-position: center;
+}
+
+/* mdサイズ以上のデバイス (PCなど) の場合 */
+@media (min-width: 768px) { /* Bootstrapのmdブレークポイントは768px */
+  .bg-image {
+    height: 300px; /* 例として400pxを設定 */
+  }
 }
 
 .text-on-image {
