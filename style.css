@@ -187,3 +187,18 @@ footer img {
 .flashing-text {
   animation: flashingAnimation 2s infinite; /* 2秒ごとに無限にアニメーションを繰り返す */
 }
+
+.triangle-button {
+  width: 120px; /* 三角形の横の長さ */
+  height: 120px; /* 三角形の縦の長さ */
+  background-color: #007bff; /* Bootstrapのデフォルトのprimaryボタン色 */
+  clip-path: polygon(100% 100%, 0 100%, 100% 0);
+  cursor: pointer;
+}
+
+.triangle-text {
+  bottom: 10px; /* テキストの位置を調整 */
+  right: 10px; /* テキストの位置を調整 */
+}
+
+
