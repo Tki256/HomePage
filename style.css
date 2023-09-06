@@ -29,7 +29,7 @@ body {
 }
 
 #navbar-logo {
-  height: 120px;  /* ロゴの高さを50pxに設定 */
+  max-width: 15rem;  /* ロゴの高さを50pxに設定 */
   width: auto;   /* 幅は自動に設定して、アスペクト比を維持します */
 }
 
