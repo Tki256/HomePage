@@ -19,10 +19,10 @@ time, mark, audio, video {
   vertical-align: baseline;
   background-color: transparent;
 }
-
-body {
-  line-height: 1;
-} */
+*/
+/* body {
+  margin: 0;
+}  */
 
 .hand-font{
   font-family: 'Yomogi', sans-serif;
@@ -133,6 +133,10 @@ body {
   font-size: 24px;  /* テキストのサイズ。必要に応じて変更してください */
   background-color: #fff;  /* オプション: テキストの背景に半透明の黒を追加 */
   padding: 10px 20px;  /* オプション: テキスト周辺のパディングを追加 */
+}
+
+footer {
+  background-color: #DEE4E5
 }
 
 footer a {
