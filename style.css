@@ -170,3 +170,13 @@ footer img {
   width: 24px;
   height: auto;
 }
+
+@keyframes flashingAnimation {
+  0%   { color: red; }
+  50%  { color: white; }
+  100% { color: red; }
+}
+
+.flashing-text {
+  animation: flashingAnimation 2s infinite; /* 2秒ごとに無限にアニメーションを繰り返す */
+}
