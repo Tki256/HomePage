@@ -25,7 +25,7 @@ body {
 } */
 
 .hand-font{
-  font-family: 'Caveat', sans-serif;
+  font-family: 'Yomogi', sans-serif;
 }
 
 #navbar-logo {
@@ -97,7 +97,7 @@ body {
 
 .menu-price-item {
   position: relative;
-  width: 520px;  /* 必要に応じて幅を調整 */
+  max-width: 100%;  /* 必要に応じて幅を調整 */
   overflow: hidden;
 }
 
