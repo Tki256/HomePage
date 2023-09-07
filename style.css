@@ -201,4 +201,13 @@ footer img {
   right: 10px; /* テキストの位置を調整 */
 }
 
-
+.thick-line {
+  border-top: 3px solid transparent;
+  background-image: linear-gradient(to right, red, yellow, green); /* 左から右へのグラデーション */
+  background-repeat: no-repeat;
+  background-size: 100% 3px; /* 100%の幅と3pxの高さ */
+  background-position: top;
+}
+.thin-line {
+  border-bottom: 1px solid black; /* 下の線を薄くする */
+}
