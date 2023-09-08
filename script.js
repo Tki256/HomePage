@@ -21,3 +21,12 @@ const observer = new IntersectionObserver(fadeInCallback, options);
 // 監視したい要素を選択して監視を開始
 const target = document.querySelector('.fade-in-section');
 observer.observe(target);
+
+$(".nav-link").on('click', function(event) {
+    event.preventDefault();
+    var target = $(this.getAttribute('href'));
+    $('html, body').animate({
+        scrollTop: target.offset().top
+    }, 1000);
+});
+
